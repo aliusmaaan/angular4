@@ -1,0 +1,7 @@
+.pcss{
+     
+    height: 100px;
+    background: red;
+    -webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+}

@@ -1,0 +1,50 @@
+<!--The content below is only a placeholder and can be replaced.-->
+s
+<div style="text-align:center">
+  <app-usman></app-usman>
+  <app-my-new-component></app-my-new-component>
+  
+</div>
+<h4>Pick a highlight color</h4>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'" />Green
+  <input type="radio" name="colors" (click)="color='yellow'" />Yellow
+  <input type="radio" name="colors" (click)="color='cyan'" />Cyan
+</div>
+<div class="pcss" [appDir2]="color" defaultColor="red" size="36">
+  <p >Highlight me!</p>
+</div>
+
+<h2>Here are some links to help you start: </h2>
+
+    <h2><button (click)="getMockData()">Get MOck data</button></h2>
+  
+    <h2><button (click)="getPromisData()">Get promise data</button></h2>
+
+    <h2><button (click)="getApiData()">Get API data</button></h2>
+
+<h2 *ngIf="heroes">Hero List</h2>
+
+<p appDir1><i>Pick a hero from the list</i></p>
+<ng-template #hero>hero</ng-template>
+<ng-template #zero>zero</ng-template>
+<ul>
+  <li *ngFor="let hero of heroes; let i=index; trackBy: trackById">
+    {{hero.name}}
+  </li>
+</ul>
+
+<h2 >User List</h2>
+<p><i>Pick a Users from the list</i></p>
+<ul>
+  <li *ngFor="let User of Users;   let i=index; trackBy: trackById">
+    {{User.name}}
+  </li>
+</ul>
+<h2>Assinment List</h2>
+<h2 #usman>Assinment List else</h2>
+<ul>
+  <li *ngFor="let assn of Assigns" >
+    {{assn.body}}
+  </li>
+</ul>
